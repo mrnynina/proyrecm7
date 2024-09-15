@@ -9,6 +9,7 @@ import './App.css';
 
 function App() {
   return (
+    <Router basename="/proyrecm7">
     <Router>
       <nav className="navbar">
         <ul>
@@ -27,6 +28,8 @@ function App() {
         <Route path="/traductor" element={<Traductor />} />
       </Routes>
     </Router>
+    </Router>
+
   );
 }
 
