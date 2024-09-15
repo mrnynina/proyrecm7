@@ -6,12 +6,10 @@ import Product from './routes/Product';
 import LoginForm from './routes/LoginForm';
 import Traductor from './routes/Traductor';
 import './App.css';
-const basename =
-  process.env.NODE_ENV === 'production' ? '/proyrecm7' : '/';
 function App() {
   return (
-    <Router basename={basename}>
-    <Router>
+    <Router basename="proyrecm7" >
+     
       <nav className="navbar">
         <ul>
           <li><Link to="/">Home</Link></li>
@@ -27,9 +25,9 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/loginform" element={<LoginForm />} />
         <Route path="/traductor" element={<Traductor />} />
-      </Routes>
+      </Routes>   
     </Router>
-    </Router>
+
 
   );
 }
