@@ -6,10 +6,11 @@ import Product from './routes/Product';
 import LoginForm from './routes/LoginForm';
 import Traductor from './routes/Traductor';
 import './App.css';
-
+const basename =
+  process.env.NODE_ENV === 'production' ? '/proyrecm7' : '/';
 function App() {
   return (
-    <Router basename="/proyrecm7">
+    <Router basename={basename}>
     <Router>
       <nav className="navbar">
         <ul>
